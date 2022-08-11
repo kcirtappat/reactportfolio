@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+    body {
+        @apply font-[Poppins];
+    }
+    .social-icons {
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+    .links {
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+    .fa-icons {
+        @apply px-4;
+        @apply text-4xl;
+    }
+    .mob-link {
+        @apply cursor-pointer;
+    }
+}
+.content-proj {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.content-proj:hover {
+    background-image: linear-gradient(
+        to right,
+         rgba(112, 226, 255, 0.8), 
+         rgba(75, 166, 189, 0.8)
+         ) !important;    
+}
